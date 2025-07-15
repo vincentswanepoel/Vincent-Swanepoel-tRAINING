@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Waiting. Start Living. Real Fitness, Real Results.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Dark Mode (Black, Dark Grays, Bright Amber Accent) -->
+    <!-- Application Structure Plan: This long-form landing page strictly adheres to the 17-step "secret selling system."
+        1. Audience Call-Out (new section at top).
+        2. Hero Section (Headline, Subheading, VSL, Primary CTA).
+        3. Intrigue Bullets (new section after Hero).
+        4. Problem Identification (The Challenge section, agitated).
+        5. Solution (The Solution section, clear remedy).
+        6. Credentials (Unrivaled Expertise section, focused on your unique background).
+        7. Benefits (Integrated within Solution/Expertise, painting "after" picture).
+        8. Social Proof (Implicit via Credentials, explicit via Guarantee).
+        9. Godfather Offer (Transformation Blueprint Session, value stacked, with Rationale).
+        10. Bonuses (Items within Godfather Offer).
+        11. Stack Value (Explicitly stated within Godfather Offer).
+        12. Reveal Price (Stated as "Free" with perceived value).
+        13. Inject Scarcity (OMITTED - no genuine scarcity provided, adhering to "no fake scarcity" rule).
+        14. Powerful Guarantee (Confidence Pledge, highly prominent).
+        15. Call to Action (Direct, commanding language).
+        16. Warning (new section after main CTA).
+        17. Close with Reminder (P.S. copy in footer area).
+        This linear, persuasive flow is designed to drag the reader through the sales message to a single, clear action. -->
+    <!-- Visualization & Content Choices: Content is textual, with strong typography for hierarchy. VSL placeholder is central. No charts/complex visualizations as per sales page guidelines. Visuals are implied by clean layout, white space, and persuasive language. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'SF Pro Text', 'SF Pro Display', 'Inter', sans-serif;
+            background-color: #000000; /* Pure black background */
+            color: #FFFFFF; /* White text for readability */
+            line-height: 1.6;
+        }
+        .section-padding {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding-top: 12rem;
+                padding-bottom: 12rem;
+            }
+        }
+        .container-tight {
+            max-width: 48rem;
+        }
+        .container-medium {
+            max-width: 64rem;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #FFD700, #FFA500); /* Bright amber for dark mode */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+        }
+        .hero-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+        }
+        .video-placeholder {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #222222; /* Darker background for video */
+        }
+        .video-placeholder:hover {
+            transform: scale(1.01);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        /* Dark mode specific section backgrounds */
+        .bg-section-dark {
+            background-color: #1A1A1A; /* Dark gray for sections */
+        }
+        .bg-section-darker {
+            background-color: #0A0A0A; /* Even darker for alternating sections */
+        }
+        /* Adjusting text colors for dark mode */
+        .text-primary-light {
+            color: #FFFFFF; /* White for primary text */
+        }
+        .text-secondary-light {
+            color: #E0E0E0; /* Slightly off-white for secondary text */
+        }
+        .text-tertiary-light {
+            color: #B0B0B0; /* Lighter gray for subtle text */
+        }
+        .text-amber-accent { /* Ensure original amber is still visible */
+            color: #FFD700; /* Brighter amber for contrast */
+        }
+        .border-gray-dark { /* Adjust border colors */
+            border-color: #444444;
+        }
+        .bg-footer-dark { /* Footer background */
+            background-color: #111111;
+        }
+        .list-disc li strong {
+            color: #FFFFFF; /* Ensure strong tags in lists are white */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="relative overflow-hidden">
+        <!-- Top Bar - Minimal Branding -->
+        <header class="absolute top-0 left-0 right-0 z-10 px-8 py-6">
+            <nav class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="text-2xl font-extrabold text-primary-light tracking-tight">
+                    <!-- Placeholder for potential minimalist logo or simple icon here -->
+                </div>
+            </nav>
+        </header>
+
+        <!-- Step 1: Call Out Your Audience -->
+        <section class="bg-section-darker text-center pt-32 pb-8">
+            <div class="max-w-5xl mx-auto px-6">
+                <p class="text-3xl sm:text-4xl font-bold text-amber-accent uppercase tracking-widest mb-4">
+                    ATTENTION: KEMPTON PARK RESIDENTS WHO WANT MORE FROM LIFE.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 2: Demand Attention with Headline -->
+        <section class="relative bg-section-darker text-center pb-24 sm:pb-48">
+            <div class="relative z-10 max-w-5xl mx-auto px-6">
+                <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold leading-tight tracking-tight mb-8 gradient-text">
+                    YOUR BODY ISN'T DONE YET.<br>
+                    UNLOCK THE POWER TO LIVE YOUR BEST YEARS, NOW.
+                </h1>
+                <p class="text-xl sm:text-2xl text-secondary-light font-medium mb-16 max-w-3xl mx-auto">
+                    STOP WORRYING ABOUT WEAKNESS. OUR METHOD HELPS YOU BUILD A RESILIENT BODY, READY TO HANDLE ANYTHING LIFE THROWS AT IT.
+                </p>
+
+                <!-- VSL Placeholder - Large and Prominent -->
+                <div class="relative w-full aspect-video bg-gray-200 rounded-3xl overflow-hidden shadow-2xl mb-16 max-w-4xl mx-auto cursor-pointer video-placeholder">
+                    <div class="absolute inset-0 flex items-center justify-center text-tertiary-light text-lg">
+                        <span class="text-6xl sm:text-7xl">▶</span>
+                        <p class="ml-6 text-xl sm:text-2xl font-medium">SEE HOW YOUR LIFE TRANSFORMS: WATCH NOW</p>
+                    </div>
+                </div>
+
+                <!-- Primary CTA (repeated later) -->
+                <a href="#consultation-section" class="inline-block px-12 py-6 bg-amber-600 text-white text-2xl font-semibold rounded-full hero-button tracking-wide uppercase">
+                    SECURE YOUR BREAKTHROUGH SESSION NOW
+                </a>
+            </div>
+        </section>
+
+        <!-- Step 3: Create Irresistible Intrigue (Bullet Copy) -->
+        <section class="bg-section-dark section-padding text-center px-6">
+            <div class="container-medium mx-auto">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-10 text-primary-light uppercase">
+                    WHAT IF YOU COULD...
+                </h2>
+                <ul class="text-secondary-light text-xl font-normal space-y-6 mb-16 list-disc list-inside text-left mx-auto max-w-2xl">
+                    <li>**FEEL MORE ENERGY THAN EVER**, WITHOUT LONG WORKOUTS?</li>
+                    <li>**SEE WHY MOST GYMS DON'T WORK**, AND WHAT ACTUALLY DOES?</li>
+                    <li>**EAT FOR STRENGTH AND ENERGY**, WITHOUT BEING HUNGRY?</li>
+                    <li>**MOVE EASIER EVERY DAY**: LIFT, BEND, PLAY WITH NO PAIN?</li>
+                    <li>**BUILD A BODY THAT FIGHTS OFF WEAKNESS AND SICKNESS**?</li>
+                </ul>
+                <p class="text-xl text-primary-light font-semibold uppercase">
+                    KEEP READING. THE ANSWERS ARE SIMPLER THAN YOU THINK.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 4: Identify the Problem (Agitate) -->
+        <section class="bg-section-darker section-padding text-center px-6">
+            <div class="container-tight mx-auto">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-10 text-primary-light uppercase">
+                    THE LIES KEEPING YOU WEAK AND TIRED.
+                </h2>
+                <p class="text-xl text-secondary-light font-normal mb-8">
+                    "YOU'RE TOO OLD." "YOU NEED TO GET FIT *BEFORE* YOU TRAIN." "WAIT FOR THE PERFECT TIME." "LOSE WEIGHT FIRST." "TRAINERS ONLY CARE ABOUT FITNESS MODELS."
+                </p>
+                <p class="text-xl text-secondary-light font-normal">
+                    NONSENSE. THESE ARE JUST EXCUSES. YOUR AGE ISN'T THE PROBLEM. YOUR CURRENT SHAPE IS WHERE WE START. YOU'RE STUCK WORRYING ABOUT YOUR BODY, MISSING OUT ON LIFE. LET'S FIX THAT.
+                </p>
+                <p class="text-xl text-secondary-light font-normal mt-8">
+                    THE TRUTH? COMFORT STOPS CHANGE. IF YOU'RE COMFORTABLE NOW, YOU WON'T MOVE. WE'RE HERE TO IGNITE YOUR LIFE, NOT JUST CHANGE YOUR MEASUREMENTS.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 5: Provide the Solution -->
+        <section class="bg-section-dark section-padding text-center px-6">
+            <div class="container-tight mx-auto">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-10 text-primary-light uppercase">
+                    OUR SIMPLE WAY: GET STRONGER FOR LIFE.
+                </h2>
+                <p class="text-xl text-secondary-light font-normal mb-8">
+                    IMAGINE: WAKING UP STRONG. MOVING EASY. FEELING READY FOR ANYTHING. THAT'S WHAT WE BUILD.
+                </p>
+                <p class="text-xl text-secondary-light font-normal">
+                    WE DON'T JUST TRAIN MUSCLES. WE TRAIN YOU FOR *LIFE*. OUR METHOD USES SMART MOVES THAT GIVE YOU BIG RESULTS FAST. THINK: LIFTING GROCERIES. PLAYING WITH KIDS. DOING IT ALL WITH EASE. YOUR BODY, READY FOR *YOUR* WORLD.
+                </p>
+                <p class="text-xl text-secondary-light font-normal">
+                    NO CRUSHING WORKOUTS. WE GUIDE YOU FROM TIRED TO THRIVING. EVERY WORKOUT FITS *YOU*. YOUR BODY. YOUR PACE. YOUR GOALS. WE DON'T CHANGE THE PLAN'S POWER, JUST HOW WE DO IT TO FIT YOU PERFECTLY. YOU'LL MOVE BETTER, STRONGER, FASTER. YOU'LL WALK LONGER. LIFT EASIER. STAND TALLER. REACT QUICKER. YOUR BODY WILL BE YOUR SHIELD AGAINST WEAKNESS AND SICKNESS. IT WILL WORK AT ITS BEST.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 6: Show Credentials & Step 7: Detail Benefits & Step 8: Social Proof (via Credibility/Guarantee) -->
+        <section class="bg-section-darker section-padding text-center px-6">
+            <div class="container-medium mx-auto">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-10 text-primary-light uppercase">
+                    REAL EXPERTISE. REAL RESULTS. NO EXCUSES.
+                </h2>
+                <p class="text-xl text-secondary-light font-normal mb-16">
+                    FORGET FADS. YOU NEED A GUIDE WITH REAL KNOWLEDGE AND A PROVEN PATH TO LASTING CHANGE.
+                </p>
+                <div class="grid md:grid-cols-2 gap-x-16 gap-y-12 text-left">
+                    <div class="flex items-start">
+                        <span class="text-amber-accent text-5xl mr-5 leading-none">&#10003;</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light">
+                                MOVES THAT DELIVER
+                            </h3>
+                            <p class="text-lg text-secondary-light font-normal">
+                                FEEL NEW FREEDOM AND POWER. WE TEACH YOU MOVES FOR EFFORTLESS STRENGTH, SAFELY. OUR METHODS BUILD TOP ATHLETES, BUT WE ADJUST THEM FOR *YOU*.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-amber-accent text-5xl mr-5 leading-none">&#10003;</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light">
+                                SMART COACHING, REAL WINS
+                            </h3>
+                            <p class="text-lg text-secondary-light font-normal">
+                                NO MORE CONFUSION. MY EDUCATION MEANS COACHING BASED ON SCIENCE, NOT FADS. FOCUS ON DOING IT RIGHT, EVERY TIME. GET BIG RESULTS IN SHORT WORKOUTS. WORK SMARTER. LIVE BIGGER.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-amber-accent text-5xl mr-5 leading-none">&#10003;</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light">
+                                FITNESS ON YOUR TERMS
+                            </h3>
+                            <p class="text-lg text-secondary-light font-normal">
+                                GET ELITE TRAINING AT YOUR COMPANY (SAVINO DEL BENE) OR IN SERENGETI ESTATE. WE MAKE IT EASY TO FIT REAL FITNESS INTO YOUR BUSY SCHEDULE.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-amber-accent text-5xl mr-5 leading-none">&#10003;</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light">
+                                BEYOND THE SCALE: LIFE TRANSFORMED
+                            </h3>
+                            <p class="text-lg text-secondary-light font-normal">
+                                IT'S NOT ABOUT LOOKS. IT'S ABOUT LIFE. BUILD A BODY THAT FIGHTS WEAKNESS AND SICKNESS. GET YOUR ENERGY, MOBILITY, AND FREEDOM BACK FOR YEARS. BE READY FOR *LIFE*.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 9: Make Your Godfather Offer & Step 10: Add Bonuses & Step 11: Stack the Value & Step 12: Reveal Your Price & Step 14: Give a Powerful Guarantee -->
+        <section id="consultation-section" class="bg-section-dark section-padding text-center px-6">
+            <div class="container-tight mx-auto">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-10 text-primary-light uppercase">
+                    YOUR FIRST STEP TO UNSTOPPABLE VITALITY.
+                </h2>
+                <p class="text-xl text-secondary-light font-normal mb-16">
+                    NOT A SALES CALL. A PLAN FOR YOUR TRANSFORMATION. WE'LL CUT THE FLUFF. FIND YOUR GOALS. SHOW YOUR PATH. NO PRESSURE. JUST A CLEAR, POWERFUL PLAN.
+                </p>
+
+                <div class="bg-section-darker p-10 rounded-2xl shadow-xl border border-gray-dark mb-16">
+                    <!-- Rationale for the Godfather Offer -->
+                    <p class="text-xl font-semibold text-primary-light mb-8">
+                        WHY ARE WE OFFERING THIS FOR FREE?
+                    </p>
+                    <p class="text-lg text-secondary-light font-normal mb-10">
+                        WE DO THIS BECAUSE EXPERIENCE SHOWS THAT ONCE PROSPECTS SEE THE CLARITY AND POWER OF OUR PLAN, THEY OFTEN CHOOSE TO BECOME CLIENTS. WHETHER YOU DO OR NOT IS COMPLETELY YOUR CHOICE. THERE'S NO PRESSURE TO BUY. THIS SESSION IS PURE VALUE.
+                    </p>
+
+                    <h3 class="text-3xl font-bold mb-6 text-primary-light">
+                        YOUR FREE PLAN SESSION INCLUDES:
+                    </h3>
+                    <ul class="text-secondary-light text-xl font-normal space-y-4 mb-10 list-disc list-inside text-left mx-auto max-w-md">
+                        <li><strong>CLEAR GOALS:</strong> WE PINPOINT EXACTLY WHAT YOU WANT TO ACHIEVE. (VALUE: R500)</li>
+                        <li><strong>YOUR FITNESS MAP:</strong> WE SEE WHERE YOU ARE NOW AND OUTLINE THE EXACT STEPS FORWARD. (VALUE: R750)</li>
+                        <li><strong>TASTE OF OUR METHOD:</strong> GET A SNEAK PEEK AT HOW OUR SIMPLE, POWERFUL TRAINING WILL WORK FOR *YOU*. (VALUE: R250)</li>
+                        <li><strong>EXPERT QUESTIONS ANSWERED:</strong> GET DIRECT, HONEST ANSWERS FROM A CERTIFIED PROFESSIONAL. (VALUE: R500)</li>
+                    </ul>
+                    <p class="text-xl font-semibold text-primary-light mb-8">
+                        TOTAL VALUE: <span class="line-through">R2000</span>
+                    </p>
+                    <p class="text-4xl font-bold text-amber-accent mb-10 leading-snug">
+                        TODAY'S PRICE: FREE
+                    </p>
+                    <p class="text-xl font-semibold text-primary-light mb-8">
+                        AND BECAUSE WE STAND BY OUR PROMISE:
+                    </p>
+                    <p class="text-3xl font-bold text-amber-accent mb-10 leading-snug">
+                        OUR CONFIDENCE PLEDGE:<br>
+                        IF YOU DON'T WALK AWAY WITH A CLEAR, ACTIONABLE PLAN FOR YOUR FITNESS GOALS AFTER OUR CHAT, YOU OWE US NOTHING.
+                    </p>
+                </div>
+
+                <!-- Step 15: The Call to Action -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-10">
+                    <a href="https://wa.me/27833810184" target="_blank" class="inline-block px-10 py-6 bg-green-500 text-white text-2xl font-semibold rounded-full hero-button tracking-wide flex items-center justify-center uppercase">
+                        <span class="mr-3 text-3xl">&#x1F4AC;</span> CHAT ON WHATSAPP NOW
+                    </a>
+                    <a href="tel:+27833810184" class="inline-block px-10 py-6 bg-gray-700 text-white text-2xl font-semibold rounded-full hero-button tracking-wide flex items-center justify-center uppercase">
+                        <span class="mr-3 text-3xl">&#x260E;</span> GIVE US A CALL: 083 381 0184
+                    </a>
+                </div>
+                <p class="text-base text-secondary-light mt-8 uppercase">
+                    PREFER TO BOOK DIRECTLY? <a href="#" class="text-amber-accent hover:underline font-semibold">SCHEDULE YOUR COMPLIMENTARY SESSION</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 16: The Warning -->
+        <section class="bg-section-darker py-16 text-center px-6">
+            <div class="container-tight mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-primary-light uppercase">
+                    WARNING: DON'T MISS THIS.
+                </h2>
+                <p class="text-xl text-secondary-light font-normal">
+                    PUT IT OFF? NOTHING CHANGES. YOU STAY STUCK. TIRED. WISHING. ACT NOW. DON'T LET COMFORT STOP YOUR CHANGE.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer & Step 17: Close with a Reminder (P.S. Copy) -->
+        <footer class="bg-footer-dark py-12 px-6 text-center text-secondary-light text-sm font-normal">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-base font-semibold text-primary-light mb-4 uppercase">
+                    P.S. THIS ISN'T JUST WORKOUTS. IT'S ABOUT A BODY WITH MORE ENERGY, EASY STRENGTH, AND REAL FREEDOM. CLAIM YOUR FREE SESSION. FIND YOUR SIMPLE PATH TO A STRONGER LIFE.
+                </p>
+                <p>&copy; 2024 PRECISION FITNESS COACHING. ALL RIGHTS RESERVED.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="#" class="hover:text-primary-light font-normal">PRIVACY POLICY</a>
+                    <span class="text-tertiary-light">|</span>
+                    <a href="#" class="hover:text-primary-light font-normal">TERMS & CONDITIONS</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
