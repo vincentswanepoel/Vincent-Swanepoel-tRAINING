@@ -199,6 +199,7 @@
         const WA_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
 
         // === PROGRAM & PRICING DATA ===
+        // NOTE: The description of the Block option has been simplified to remove the savings detail.
         const pricingData = {
             // THE 'PROGRAMMING ONLY' PROGRAM
             'program1': [
@@ -209,7 +210,7 @@
             'program2': [
                 { term: 'Weekly', price: '215', billing: '/week', default: true },
                 { term: 'Monthly', price: '850', billing: '/month' },
-                // Block price remains 3000, billing term changed for clarity and savings text removed from display
+                // Simplified Block Option
                 { term: 'Block', price: '3000', billing: ' (4 months)' }
             ],
             // THE 'COMPLETE' TRANSFORMATION
@@ -403,7 +404,7 @@
                         <div id="program2-selectors" class="price-selector-group">
                             <button data-term="Weekly" class="price-selector-button">Weekly</button>
                             <button data-term="Monthly" class="price-selector-button">Monthly</button>
-                            <!-- SAVINGS TEXT REMOVED HERE -->
+                            <!-- Savings text removed from the button -->
                             <button data-term="Block" class="price-selector-button">4-Month Block</button>
                         </div>
                         
@@ -507,8 +508,8 @@
         </footer>
     </div>
 
-    <!-- Sticky Footer CTA Bar - CRITICAL FOR MOBILE CONVERSION -->
-    <!-- Note: This CTA is generic and still uses the golden hue defined in hero-button styling. -->
+    <!-- REMOVED: Sticky Footer CTA Bar (The fixed mobile CTA) -->
+    <!--
     <div class="fixed bottom-0 left-0 right-0 bg-darkest py-3 z-50 shadow-2xl border-t-2 border-amber-accent sm:hidden">
         <div class="max-w-7xl mx-auto px-4">
             <a href="#pricing-section" class="w-full block py-3 hero-button text-black text-lg font-bold rounded-lg text-center uppercase">
@@ -516,5 +517,6 @@
             </a>
         </div>
     </div>
+    -->
 </body>
 </html>
