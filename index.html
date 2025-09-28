@@ -171,17 +171,21 @@
             margin-left: auto;
             margin-right: auto;
         }
+        
+        /* MODIFIED PRICE BUTTON STYLES FOR PROPORTIONALITY */
         .price-selector-button {
-            flex-grow: 1;
-            padding: 0.5rem 1rem; /* py-2 px-4 */
+            padding: 0.5rem 0.75rem; /* Tighter horizontal padding */
             font-weight: 600; /* font-semibold */
             color: var(--color-text-tertiary); /* text-gray-400 */
             border-radius: 0.5rem; /* rounded-lg */
             cursor: pointer;
             transition: all 0.2s ease;
             text-align: center;
-            min-width: 6rem;
+            min-width: 5rem; /* Slightly reduced min width */
+            line-height: 1.2; /* Tighter line height to accommodate two lines better */
         }
+        /* ======================================================= */
+
         .price-selector-button.active {
             background-color: var(--color-accent); /* bg-amber-500 */
             color: var(--color-darkest); /* text-black */
@@ -205,7 +209,7 @@
             'program2': [
                 { term: 'Weekly', price: '215', billing: '/week', default: true },
                 { term: 'Monthly', price: '850', billing: '/month' },
-                // The price for the 4-month block is R3000, as requested. (R400 saving vs. R850/month * 4)
+                // Block price remains 3000, billing term changed for clarity and savings text removed from display
                 { term: 'Block', price: '3000', billing: ' (4 months)' }
             ],
             // THE 'COMPLETE' TRANSFORMATION
@@ -395,12 +399,12 @@
                         <h3 id="program2-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'GUIDED PROGRESS' PROGRAM</h3>
                         <p class="text-base text-tertiary-light mb-6">For the serious but busy professional.</p>
 
-                        <!-- Price Selector Toggles -->
+                        <!-- Price Selector Toggles (Now proportional) -->
                         <div id="program2-selectors" class="price-selector-group">
                             <button data-term="Weekly" class="price-selector-button">Weekly</button>
                             <button data-term="Monthly" class="price-selector-button">Monthly</button>
-                            <!-- Updated text to highlight savings (R850*4 = R3400 vs R3000 block) -->
-                            <button data-term="Block" class="price-selector-button">4-Month Block (Save R400)</button>
+                            <!-- SAVINGS TEXT REMOVED HERE -->
+                            <button data-term="Block" class="price-selector-button">4-Month Block</button>
                         </div>
                         
                         <!-- Dynamic Price Display -->
@@ -514,5 +518,3 @@
     </div>
 </body>
 </html>
-
-
