@@ -3,427 +3,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shed Fat. Build Muscle. Get Lasting Results. - Precision Fitness</title>
+    <!-- Title is a clear promise - UPDATED BRAND NAME -->
+    <title>Shed Fat. Build Muscle. Get Lasting Vitality. - Invincible Training</title> 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Google Tag Manager (using placeholders) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DSR9B2ELR"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9DSR9B2ELR');
-      gtag('config', 'GT-WVR58HJT');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9DSR9B2ELR');
+        gtag('config', 'GT-WVR58HJT');
     </script>
-    <!-- Chosen Palette: Dark Mode (Black, Dark Grays, Bright Amber Accent) -->
+
+    <!-- Redesigned CSS with new variables for better management and color consistency -->
     <style>
+        /* BASE STYLES */
+        :root {
+            --color-black: #000000;
+            --color-darkest: #050505; /* Near Black */
+            --color-dark: #0A0A0A; /* Section Darker */
+            --color-mid: #1A1A1A; /* Section Dark */
+            --color-accent: #FFB800; /* Vibrant Gold/Amber */
+            --color-text-primary: #FFFFFF;
+            --color-text-secondary: #E0E0E0;
+            --color-text-tertiary: #B0B0B0;
+            --color-border: #333333;
+            --color-whatsapp: #25D366; /* WhatsApp Green */
+        }
+
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #000000; /* Pure black background */
-            color: #FFFFFF; /* White text for readability */
+            background-color: var(--color-black);
+            color: var(--color-text-primary);
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
-        .section-padding {
-            padding-top: 6rem; /* Slightly reduced for tighter feel */
-            padding-bottom: 6rem;
-        }
+        /* Adjusted section padding for a tighter feel */
+        .section-padding { padding-top: 6rem; padding-bottom: 6rem; }
         @media (min-width: 768px) {
-            .section-padding {
-                padding-top: 8rem;
-                padding-bottom: 8rem;
-            }
+            .section-padding { padding-top: 8rem; padding-bottom: 8rem; }
         }
-        .container-tight {
-            max-width: 48rem; /* 768px */
-        }
-        .container-medium {
-            max-width: 64rem; /* 1024px */
-        }
+        .container-tight { max-width: 48rem; }
+        .container-medium { max-width: 64rem; }
+
+        /* ACCENT & DARK MODE STYLES */
         .gradient-text {
-            background: linear-gradient(to right, #FFD700, #FFA500); /* Bright amber for dark mode */
+            background: linear-gradient(to right, #FF8C00, var(--color-accent)); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .hero-button {
+        /* All sections now use the same black background */
+        .bg-section-dark { background-color: var(--color-black); }
+        .bg-section-darker { background-color: var(--color-black); }
+        .text-primary-light { color: var(--color-text-primary); }
+        .text-secondary-light { color: var(--color-text-secondary); }
+        .text-tertiary-light { color: var(--color-text-tertiary); }
+        .text-amber-accent { color: var(--color-accent); }
+        .border-gray-dark { border-color: var(--color-border); }
+        .bg-footer-dark { background-color: var(--color-black); }
+        .list-disc li::marker { color: var(--color-accent); }
+        
+        /* === Custom class for the glowing border effect on the popular card === */
+        
+        /* Keyframes for the constant, pulsating glow */
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 
+                    0 0 20px rgba(255, 184, 0, 0.7), /* Outer subtle glow */
+                    0 0 70px rgba(255, 184, 0, 0.4) inset; /* Inner soft hue */
+            }
+            50% {
+                box-shadow: 
+                    0 0 35px rgba(255, 184, 0, 1), /* Brighter at 50% */
+                    0 0 100px rgba(255, 184, 0, 0.6) inset; /* Stronger inner hue */
+            }
+            100% {
+                box-shadow: 
+                    0 0 20px rgba(255, 184, 0, 0.7), 
+                    0 0 70px rgba(255, 184, 0, 0.4) inset;
+            }
+        }
+
+        .golden-glow-border {
+            /* Increased border thickness for impact */
+            border-width: 5px; 
+            border-style: solid;
+            border-color: var(--color-accent); /* Ensure border color is solid gold */
+
+            /* Apply the animation for a constant, eye-catching pulse */
+            animation: pulse-glow 2s infinite alternate ease-in-out; 
+            
+            z-index: 10;
+        }
+        
+        /* ========================================================================= */
+
+        /* CTA Button Styling for WhatsApp Checkout (Green for ALL Programs) */
+        .whatsapp-cta-button { 
+            background: linear-gradient(to right, #00A859, #25D366); /* Darker Green to WhatsApp Green */
+            color: white; 
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.2); 
+        }
+        .whatsapp-cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Hero Button (Used for the sticky mobile CTA) - Style it like a golden CTA */
+        .hero-button {
+            background: linear-gradient(to right, #FF8C00, var(--color-accent)); /* Gold/Amber Gradient */
+            color: var(--color-darkest); /* Dark text for contrast */
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(255, 184, 0, 0.4); 
         }
         .hero-button:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 12px 40px rgba(255, 184, 0, 0.6);
         }
-        /* New style for responsive video embed */
+        
+        /* Video Container */
         .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 1rem; /* rounded-2xl */
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* shadow-2xl */
-            max-width: 48rem; /* max-w-3xl */
+            position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;
+            border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); max-width: 48rem; margin-left: auto; margin-right: auto;
+        }
+        .video-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+
+        /* Custom WhatsApp Button Styling (Undecided Section) */
+        .whatsapp-button-color { 
+            background: linear-gradient(to right, #34A853, var(--color-whatsapp)); 
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-button-color:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        }
+        .whatsapp-button-color svg {
+            fill: white;
+            transition: transform 0.3s ease;
+        }
+        /* Increased size for Still Undecided Heading */
+        .undecided-heading { font-size: 3rem; } /* Default size for mobile */
+        @media (min-width: 640px) {
+             .undecided-heading { font-size: 4rem; } /* sm:text-5xl */
+        }
+        @media (min-width: 768px) {
+            .undecided-heading { font-size: 5rem; } /* md:text-6xl - Roughly 3x the previous text-4xl */
+        }
+        
+        /* Pricing Tab Styles */
+        .price-selector-group {
+            display: flex;
+            background-color: var(--color-mid);
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 4px; /* p-1 */
+            margin-bottom: 2rem;
+            width: fit-content;
             margin-left: auto;
             margin-right: auto;
         }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+        .price-selector-button {
+            flex-grow: 1;
+            padding: 0.5rem 1rem; /* py-2 px-4 */
+            font-weight: 600; /* font-semibold */
+            color: var(--color-text-tertiary); /* text-gray-400 */
+            border-radius: 0.5rem; /* rounded-lg */
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            min-width: 6rem;
         }
-        /* Dark mode specific section backgrounds */
-        .bg-section-dark {
-            background-color: #1A1A1A; /* Dark gray for sections */
+        .price-selector-button.active {
+            background-color: var(--color-accent); /* bg-amber-500 */
+            color: var(--color-darkest); /* text-black */
+            box-shadow: 0 4px 10px rgba(255, 184, 0, 0.4);
         }
-        .bg-section-darker {
-            background-color: #0A0A0A; /* Even darker for alternating sections */
-        }
-        /* Adjusting text colors for dark mode */
-        .text-primary-light {
-            color: #FFFFFF; /* White for primary text */
-        }
-        .text-secondary-light {
-            color: #E0E0E0; /* Slightly off-white for secondary text */
-        }
-        .text-tertiary-light {
-            color: #B0B0B0; /* Lighter gray for subtle text */
-        }
-        .text-amber-accent { /* Ensure original amber is still visible */
-            color: #FFD700; /* Brighter amber for contrast */
-        }
-        .border-gray-dark { /* Adjust border colors */
-            border-color: #444444;
-        }
-        .bg-footer-dark { /* Footer background */
-            background-color: #111111;
-        }
-        .list-disc li::marker { /* Style for list item markers */
-            color: #FFD700; /* Amber for bullet points */
-        }
+
     </style>
+    <script>
+        // WhatsApp link base URL with placeholder phone number (replace with your actual number)
+        const WHATSAPP_NUMBER = "27833810184"; 
+        const WA_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
+
+        // === PROGRAM & PRICING DATA ===
+        const pricingData = {
+            // THE 'PROGRAMMING ONLY' PROGRAM
+            'program1': [
+                { term: 'Monthly', price: '550', billing: '/month', default: true },
+                { term: 'Yearly', price: '5500', billing: '/year' }
+            ],
+            // THE 'GUIDED PROGRESS' PROGRAM (Most Popular)
+            'program2': [
+                { term: 'Weekly', price: '215', billing: '/week', default: true },
+                { term: 'Monthly', price: '850', billing: '/month' },
+                // The price for the 4-month block is R3000, as requested. (R400 saving vs. R850/month * 4)
+                { term: 'Block', price: '3000', billing: ' (4 months)' }
+            ],
+            // THE 'COMPLETE' TRANSFORMATION
+            'program3': [
+                { term: 'Weekly', price: '500', billing: '/week', default: true }
+            ]
+        };
+        
+        /**
+         * Generates the full WhatsApp link with a custom message.
+         * @param {string} programName The descriptive name of the program.
+         * @param {string} price The price value.
+         * @param {string} billingTerm The billing frequency (e.g., /month, /year).
+         * @returns {string} The encoded WhatsApp deep link.
+         */
+        function generateWhatsappLink(programName, price, billingTerm) {
+            // Using a descriptive name including price for better tracking
+            const fullProgramName = `${programName} (R${price}${billingTerm.trim()})`;
+            
+            // Message format: "Hello, I want to enroll in the [Full Program Name]. Please send me the next steps."
+            const message = `Hello, I saw the Invincible Training programs and I would like to enroll in the *${fullProgramName}* program. Please send me the next steps for sign-up.`;
+            return WA_BASE_URL + encodeURIComponent(message);
+        }
+
+        /**
+         * Updates the price display and CTA link for a program card.
+         * @param {string} programId 'program1', 'program2', or 'program3'.
+         * @param {string} term The billing term selected ('Monthly', 'Yearly', 'Weekly', 'Block').
+         */
+        function updatePriceDisplay(programId, term) {
+            const programOptions = pricingData[programId];
+            const selectedOption = programOptions.find(opt => opt.term === term);
+
+            if (!selectedOption) return; // Guard clause
+
+            const priceElement = document.getElementById(`${programId}-price`);
+            const billingElement = document.getElementById(`${programId}-billing`);
+            const ctaButton = document.getElementById(`cta-${programId}`);
+            const programTitle = document.getElementById(`${programId}-title`).innerText;
+            
+            // 1. Update Price and Billing Text
+            if (priceElement) {
+                priceElement.innerText = selectedOption.price;
+            }
+            if (billingElement) {
+                billingElement.innerText = selectedOption.billing;
+            }
+
+            // 2. Update CTA Link
+            if (ctaButton) {
+                ctaButton.href = generateWhatsappLink(programTitle, selectedOption.price, selectedOption.billing);
+            }
+
+            // 3. Update Active Button State (if selectors exist)
+            const selectorGroup = document.getElementById(`${programId}-selectors`);
+            if (selectorGroup) {
+                selectorGroup.querySelectorAll('.price-selector-button').forEach(btn => {
+                    if (btn.getAttribute('data-term') === term) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            }
+        }
+        
+        /**
+         * Initializes the pricing cards with default values and attaches listeners.
+         */
+        window.onload = function() {
+            // Initialize each program card
+            Object.keys(pricingData).forEach(programId => {
+                const programOptions = pricingData[programId];
+                const defaultOption = programOptions.find(opt => opt.default);
+                
+                // Set the default price and CTA
+                if (defaultOption) {
+                    updatePriceDisplay(programId, defaultOption.term);
+                }
+
+                // Attach listeners to selector buttons
+                const selectorGroup = document.getElementById(`${programId}-selectors`);
+                if (selectorGroup) {
+                    selectorGroup.querySelectorAll('.price-selector-button').forEach(button => {
+                        button.addEventListener('click', () => {
+                            const term = button.getAttribute('data-term');
+                            updatePriceDisplay(programId, term);
+                        });
+                    });
+                }
+            });
+        };
+    </script>
 </head>
 <body>
 
     <div class="relative overflow-hidden">
-        <!-- Minimalist Header (No distractions) -->
+        <!-- Minimalist Header (Top Bar) -->
         <header class="absolute top-0 left-0 right-0 z-10 px-4 py-4">
+            <!-- UPDATED: Changed justify-between to justify-center to center the branding -->
             <nav class="max-w-7xl mx-auto flex justify-center items-center">
-                <div class="logo-placeholder">YOUR LOGO</div>
+                <!-- UPDATED: Brand name changed to INVINCIBLE TRAINING and centered -->
+                <div class="logo-placeholder text-xl font-bold text-amber-accent">INVINCIBLE TRAINING</div>
             </nav>
         </header>
 
-        <!-- Step 1: Call Out Your Audience -->
-        <section class="bg-section-darker text-center pt-28 pb-6">
-            <div class="max-w-5xl mx-auto px-4">
-                <p class="text-2xl sm:text-3xl font-bold text-amber-accent uppercase tracking-widest mb-3">
+        <!-- Hero Section (Headline, Subheading, VSL) - First touchpoint is impactful -->
+        <section class="relative bg-section-darker text-center pt-32 pb-12 sm:pb-16 px-4">
+            <div class="relative z-10 max-w-5xl mx-auto">
+                
+                <!-- New Wording -->
+                <p class="text-lg font-bold uppercase mb-4 text-white">
                     ATTENTION: THE TRUTH ABOUT WHY YOUR FITNESS EFFORTS HAVE FAILED (AND HOW TO FINALLY WIN).
                 </p>
-            </div>
-        </section>
 
-        <!-- Step 2: Demand Attention with Headline (Using chosen #2) -->
-        <section class="relative bg-section-darker text-center pb-16 sm:pb-24">
-            <div class="relative z-10 max-w-5xl mx-auto px-4">
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 gradient-text">
-                    SICK OF FAD DIETS & EMPTY PROMISES?<br>
-                    FINALLY SHED FAT. BUILD REAL MUSCLE. GET LASTING RESULTS.
+                <!-- Heading: Clear, Compelling Promise, specific and avoids cheesy phrases -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-amber-accent">
+                    SICK OF FAD DIETS & EMPTY PROMISES? FINALLY SHED FAT. BUILD REAL MUSCLE. GET LASTING RESULTS.
                 </h1>
-                <p class="text-lg sm:text-xl text-secondary-light font-medium mb-12 max-w-3xl mx-auto">
+                
+                <!-- Subheading: Add Context to the promise -->
+                <p class="text-lg sm:text-xl font-bold mb-12 max-w-3xl mx-auto text-white">
                     YOU'VE TRIED IT ALL, YET STILL FRUSTRATED. DISCOVER OUR UNIQUE METHOD THAT WORKS WHERE OTHERS HAVE FAILED, DELIVERING THE LEAN, STRONG BODY YOU DESERVE.
                 </p>
 
-                <!-- VSL Video Embed using YouTube iframe -->
+                <!-- VSL Video Embed (1-3 minutes, non-scripted, just honesty) -->
                 <div class="video-container">
                     <iframe
                         src="https://www.youtube.com/embed/YG0roUARdcs?controls=0&modestbranding=1&rel=0"
-                        title="Video Sales Letter"
+                        title="Program Blueprint Video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                     </iframe>
                 </div>
-                <p class="text-sm text-tertiary-light mt-4 mb-12">WATCH THIS SHORT VIDEO TO DISCOVER YOUR PATH TO VITALITY</p>
+                <p class="text-sm text-tertiary-light mt-4 mb-8">WATCH THIS SHORT VIDEO TO SEE THE EXACT BLUEPRINT WE USE</p>
+            </div>
+        </section>
 
+        <!-- Step 9-16: Pricing & Offer Section (Frictionless, Direct Purchase) -->
+        <section id="pricing-section" class="bg-section-dark pt-12 pb-16 sm:pt-16 sm:pb-24 text-center px-4">
+            <div class="container-medium mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
+                    CHOOSE YOUR TRANSFORMATION PATH: FULL TRANSPARENCY.
+                </h2>
+                
+                <p class="text-xl text-secondary-light font-normal mb-10 max-w-3xl mx-auto">
+                    No calls, no sales pitches—just a clear path to lasting results. Select the program and term that fits your goals and begin today with our Money-Back Confidence Pledge.
+                </p>
 
-                <!-- Primary CTA (repeated later) -->
-                <a href="#consultation-section" class="inline-block px-10 py-5 bg-amber-600 text-white text-xl font-semibold rounded-full hero-button tracking-wide uppercase">
-                    SECURE YOUR FREE BREAKTHROUGH SESSION NOW
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- Pricing Option 1: The 'Programming Only' Program (Monthly/Yearly Toggle) -->
+                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-gray-dark hover:border-amber-accent transition duration-300 flex flex-col">
+                        <h3 id="program1-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'PROGRAMMING ONLY' PROGRAM</h3>
+                        <p class="text-base text-tertiary-light mb-6">For the motivated self-starter.</p>
+                        
+                        <!-- Price Selector Toggles -->
+                        <div id="program1-selectors" class="price-selector-group">
+                            <button data-term="Monthly" class="price-selector-button">Monthly</button>
+                            <button data-term="Yearly" class="price-selector-button">Yearly</button>
+                        </div>
+
+                        <!-- Dynamic Price Display -->
+                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
+                            R<span id="program1-price">550</span>
+                            <span class="text-xl text-tertiary-light" id="program1-billing">/month</span>
+                        </p>
+
+                        <!-- Features listed -->
+                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
+                            <li>Customised Training Program</li>
+                            <li>Access to our Program Library</li>
+                            <li>Video Demonstrations for every exercise</li>
+                        </ul>
+                        
+                        <!-- WhatsApp CTA (Green) -->
+                        <a id="cta-program-1" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
+                            ENQUIRE NOW &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Pricing Option 2: The 'Guided Progress' Program (Most Popular) (Weekly/Monthly/Block Toggle) -->
+                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-amber-accent golden-glow-border transition duration-300 relative flex flex-col">
+                        <div class="absolute top-0 right-0 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>
+                        <h3 id="program2-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'GUIDED PROGRESS' PROGRAM</h3>
+                        <p class="text-base text-tertiary-light mb-6">For the serious but busy professional.</p>
+
+                        <!-- Price Selector Toggles -->
+                        <div id="program2-selectors" class="price-selector-group">
+                            <button data-term="Weekly" class="price-selector-button">Weekly</button>
+                            <button data-term="Monthly" class="price-selector-button">Monthly</button>
+                            <!-- Updated text to highlight savings (R850*4 = R3400 vs R3000 block) -->
+                            <button data-term="Block" class="price-selector-button">4-Month Block (Save R400)</button>
+                        </div>
+                        
+                        <!-- Dynamic Price Display -->
+                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
+                            R<span id="program2-price">215</span>
+                            <span class="text-xl text-tertiary-light" id="program2-billing">/week</span>
+                        </p>
+                        
+                        <!-- Features listed -->
+                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
+                            <li>EVERYTHING IN THE 'PROGRAMMING ONLY' PROGRAM, PLUS:</li>
+                            <li>Weekly Check-ins & Progress Tracking</li>
+                            <li>Basic Nutrition Guidelines</li>
+                            <li>Ongoing Accountability & Motivation</li>
+                        </ul>
+                        
+                        <!-- WhatsApp CTA (GREEN) -->
+                        <a id="cta-program-2" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
+                            ENQUIRE NOW &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Pricing Option 3: The 'Complete' Transformation (Weekly Price - Fixed) -->
+                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-gray-dark hover:border-amber-accent transition duration-300 flex flex-col">
+                        <h3 id="program3-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'COMPLETE' TRANSFORMATION</h3>
+                        <p class="text-base text-tertiary-light mb-6">For those who want comprehensive support.</p>
+                        
+                        <!-- Price Selector Placeholder (No Toggle needed as only one option provided) -->
+                        <div id="program3-selectors" class="mb-8"><!-- Placeholder for consistent spacing --></div>
+
+                        <!-- Dynamic Price Display (Fixed) -->
+                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
+                            R<span id="program3-price">500</span>
+                            <span class="text-xl text-tertiary-light" id="program3-billing">/week</span>
+                        </p>
+
+                        <!-- Features listed -->
+                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
+                            <li>EVERYTHING IN THE 'GUIDED PROGRESS' PROGRAM, PLUS:</li>
+                            <li>Bespoke Nutrition Coaching & Meal Plans</li>
+                            <li>24/7 Direct Coach Access for all queries</li>
+                            <li>Gym Program Adjustments & Injury Workarounds</li>
+                            <li>Mindset Coaching & Education</li>
+                            <li>Comprehensive Monthly Review Calls</li>
+                        </ul>
+                        
+                        <!-- WhatsApp CTA (Green) -->
+                        <a id="cta-program-3" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
+                            ENQUIRE NOW &rarr;
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- The Money-Back Guarantee (takes on the risk) -->
+                <div class="mt-10 bg-section-darker p-6 rounded-xl border border-gray-dark">
+                    <p class="text-3xl font-bold text-amber-accent mb-3 leading-snug">
+                        OUR CONFIDENCE PLEDGE: 14-DAY MONEY-BACK GUARANTEE.
+                    </p>
+                    <p class="text-lg text-secondary-light">
+                        You've likely experienced the disappointment of ineffective programs. We believe in providing value, which is why your investment is protected by a 14-day money-back guarantee starting from the date of purchase. To guarantee a fast, same-day refund if you find this coaching isn't the perfect solution, all enrollment must be completed directly on this website.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Call to Action (Undecided) -->
+        <section class="bg-section-dark pt-12 pb-16 text-center px-4">
+            <div class="container-tight mx-auto">
+                <!-- Applied custom sizing for 3x bigger heading -->
+                <h2 class="undecided-heading font-bold mb-4 text-primary-light uppercase">
+                    STILL UNDECIDED?
+                </h2>
+                <p class="text-lg text-secondary-light font-normal mb-8">
+                    Making a commitment to your health is a significant decision. We are here to help you choose the best option for your unique needs. If you are looking for in-person coaching, please enquire today!
+                </p>
+                <a href="https://wa.me/27833810184" target="_blank" class="inline-flex items-center justify-center px-10 py-4 font-bold rounded-full whatsapp-button-color text-white text-lg tracking-wide hover:shadow-lg transition-all">
+                    <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.04 2.86C6.88 2.86 2.7 7.04 2.7 12.2c0 1.7 0.48 3.32 1.34 4.75L2.83 21.03l4.24-1.22c1.39 0.76 2.97 1.15 4.8 1.15h.01c5.17 0 9.35-4.19 9.35-9.35 0-5.17-4.18-9.35-9.35-9.35zm0 16.92c-1.63 0-3.15-.43-4.49-1.18l-3.26.94.94-3.17c-0.81-1.42-1.24-3.05-1.24-4.71 0-4.3 3.48-7.79 7.78-7.79 4.3 0 7.78 3.49 7.78 7.79 0 4.31-3.48 7.79-7.78 7.79zm3.84-5.08c-0.21-0.1-0.49-0.24-0.78-0.38-0.28-0.14-0.49-0.21-0.67-0.21s-0.34-0.07-0.62 0.28c-0.28 0.35-1.07 1.29-1.3 1.55-0.23 0.26-0.46 0.29-0.85 0.11s-1.63-0.59-3.08-1.92c-1.14-1.05-1.91-2.34-2.14-2.73s-0.02-0.57 0.17-0.71c0.16-0.14 0.35-0.28 0.52-0.45 0.17-0.17 0.23-0.28 0.35-0.46 0.12-0.18 0.06-0.34-0.03-0.54s-0.67-1.72-0.91-2.35c-0.23-0.63-0.18-0.54-0.4-0.91-0.18-0.31-0.38-0.26-0.59-0.26s-0.42-0.05-0.66-0.05c-0.23 0-0.62 0.05-0.93 0.42-0.31 0.37-1.18 1.14-1.18 2.78s1.22 3.23 1.39 3.46c0.17 0.23 2.29 3.49 5.56 4.88 0.77 0.33 1.38 0.53 1.86 0.68 0.77 0.25 1.48 0.22 2.04 0.14 0.61-0.09 1.84-0.75 2.1-1.49s0.27-1.32 0.19-1.49c-0.08-0.17-0.29-0.27-0.6-0.43z"/>
+                    </svg>
+                    <span>TALK TO US ON WHATSAPP</span>
                 </a>
             </div>
         </section>
 
-        <!-- Step 3: Create Irresistible Intrigue (Bullet Copy) -->
-        <section class="bg-section-dark section-padding text-center px-4">
-            <div class="container-medium mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    WHAT IF YOU COULD...
-                </h2>
-                <ul class="text-secondary-light text-lg font-normal space-y-4 mb-12 list-disc list-inside text-left mx-auto max-w-xl">
-                    <li>**DISCOVER THE LITTLE-KNOWN SECRET** to consistent fat loss, without constant hunger?</li>
-                    <li>**LEARN WHY MOST GYM ROUTINES FAIL** for long-term strength, and what to do instead?</li>
-                    <li>**UNLOCK THE ABILITY** to move freely, lift with ease, and play without pain, regardless of age?</li>
-                    <li>**FINALLY BUILD A BODY** that not only looks great but actively fights off weakness and sickness?</li>
-                    <li>**GET A PROVEN ROADMAP** that cuts through the BS and delivers real, lasting vitality?</li>
-                </ul>
-                <p class="text-lg text-primary-light font-semibold uppercase">
-                    KEEP READING. THE TRUTHS ARE SIMPLER THAN YOU THINK.
-                </p>
-            </div>
-        </section>
-
-        <!-- Step 4: Identify the Problem (Agitate) -->
-        <section class="bg-section-darker section-padding text-center px-4">
-            <div class="container-tight mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    THE REAL PROBLEM: WHY YOU'RE STILL STUCK.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    You've been told: "Just eat less." "Do more cardio." "You're too old." "It's all about willpower."
-                </p>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    **NONSENSE.** These are the lies the industry feeds you. They keep you on a hamster wheel of frustration, constantly chasing quick fixes that never last.
-                </p>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    Do you wake up in the morning and look in the mirror, still seeing that stubborn fat? Do you worry about where your next burst of energy is going to come from? Are you spending weekends *worrying* about your body, instead of *enjoying* the fruits of your hard work with family and friends? This isn't just about weight; it's about **missing out on the life you deserve.**
-                </p>
-                <p class="text-lg text-secondary-light font-normal mt-6">
-                    **The brutal truth? Comfort is the enemy of change.** If you're comfortable with the current state, you won't move. We're here to agitate that discomfort, because you deserve better. By articulating your problems better than you can yourself, we qualify ourselves as the proven experts.
-                </p>
-            </div>
-        </section>
-
-        <!-- Step 5: Provide the Solution -->
-        <section class="bg-section-dark section-padding text-center px-4">
-            <div class="container-tight mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    THE REMEDY: YOUR PATH TO UNSTOPPABLE VITALITY.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    Imagine: waking up with boundless energy. Moving with effortless strength. Feeling ready for anything life throws at you. That's not a dream; that's what we build.
-                </p>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    We don't just train muscles. We train you for *life*. Our method uses smart, functional movements that deliver **big results in short, efficient bursts.** Think: lifting groceries with ease, playing with grandkids for hours, climbing stairs without a second thought. Your body, ready for *your* world.
-                </p>
-                <p class="text-lg text-secondary-light font-normal mb-6">
-                    **OUR UNIQUE MECHANISM: FUNCTIONAL FITNESS FOR LASTING CAPACITY.** Unlike those fad diets or isolated gym routines that only scratch the surface, we go deeper. We build a **resilient foundation** that makes your body efficient, powerful, and ready for years of active living. This is why our clients see results that stick, where other methods fail.
-                </p>
-                <p class="text-lg text-secondary-light font-normal mt-6">
-                    No crushing workouts. We guide you from tired to thriving. Every workout fits *you*. Your body. Your pace. Your goals. We don't change the plan's power, just how we do it to fit you perfectly.
-                </p>
-            </div>
-        </section>
-
-        <!-- Step 6: Show Credentials -->
-        <section class="bg-section-darker section-padding text-center px-4">
-            <div class="container-medium mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    PROVEN EXPERTISE. UNRIVALED CREDIBILITY.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-12">
-                    In a world of online gurus, you need a guide with real knowledge and a proven track record.
-                </p>
-                <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 text-left">
-                    <div class="flex items-start">
-                        <span class="text-amber-accent text-4xl mr-4 leading-none">&#10003;</span>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1 text-primary-light">
-                                EDUCATION-BACKED METHODOLOGY
-                            </h3>
-                            <p class="text-base text-secondary-light font-normal">
-                                My Education Degree means I don't just tell you *what* to do, but *why*. We cut through the confusion, providing science-backed training that builds habits designed to stick.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-amber-accent text-4xl mr-4 leading-none">&#10003;</span>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1 text-primary-light">
-                                REAL-WORLD RESULTS FOR CLIENTS
-                            </h3>
-                            <p class="text-base text-secondary-light font-normal">
-                                We've helped individuals just like you regain energy, eliminate pain, and achieve functional strength they thought was impossible. (Placeholder for specific client results/case studies).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-amber-accent text-4xl mr-4 leading-none">&#10003;</span>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1 text-primary-light">
-                                FEATURED EXPERTISE (AS SEEN IN...)
-                            </h3>
-                            <p class="text-base text-secondary-light font-normal">
-                                (Placeholder for logos of relevant publications/partners if applicable. E.g., "As seen in [Local Health Magazine], [Fitness Blog Name]").
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <span class="text-amber-accent text-4xl mr-4 leading-none">&#10003;</span>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1 text-primary-light">
-                                CERTIFIED & RECOGNIZED
-                            </h3>
-                            <p class="text-base text-secondary-light font-normal">
-                                (Placeholder for relevant certifications, industry body memberships, or awards. E.g., "Certified Functional Strength Coach," "Member of [Industry Association]").
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Step 7: Detail Benefits -->
-        <section class="bg-section-dark section-padding text-center px-4">
-            <div class="container-tight mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    WHAT YOU'LL GAIN: BEYOND THE SCALE.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-12">
-                    Forget fleeting trends. This is about a visceral transformation that impacts every area of your life. Features tell, benefits sell.
-                </p>
-                <ul class="text-secondary-light text-lg font-normal space-y-4 mb-12 list-disc list-inside text-left mx-auto max-w-xl">
-                    <li>**UNSTOPPABLE ENERGY:** Wake up feeling refreshed, ready to tackle your day without the afternoon slump.</li>
-                    <li>**EFFORTLESS STRENGTH:** Lift, carry, and move with a newfound ease you thought was gone forever.</li>
-                    <li>**LASTING FAT LOSS:** Shed stubborn weight and keep it off, transforming your body composition for good.</li>
-                    <li>**FREEDOM FROM ACHES:** Reduce joint pain and stiffness, moving with comfort and confidence.</li>
-                    <li>**INCREASED VITALITY:** Feel younger, more vibrant, and ready to engage fully in life's adventures.</li>
-                    <li>**CONFIDENCE IN YOUR SKIN:** Look in the mirror and genuinely like what you see, feeling powerful and capable.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Step 8: Social Proof -->
-        <section class="bg-section-darker section-padding text-center px-4">
-            <div class="container-medium mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    DON'T JUST TAKE OUR WORD FOR IT.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-12">
-                    The results speak for themselves. See how real people are reclaiming their vitality.
-                </p>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Placeholder for Testimonial 1 -->
-                    <div class="bg-section-dark p-6 rounded-lg shadow-md border border-gray-dark">
-                        <p class="text-lg italic text-secondary-light mb-4">"I used to dread stairs. Now I run up them! Vincent's method changed everything. I feel 10 years younger."</p>
-                        <p class="font-semibold text-primary-light">- Sarah M., 58, Kempton Park</p>
-                    </div>
-                    <!-- Placeholder for Testimonial 2 -->
-                    <div class="bg-section-dark p-6 rounded-lg shadow-md border border-gray-dark">
-                        <p class="text-lg italic text-secondary-light mb-4">"Finally, a trainer who understands! No more generic workouts. I'm stronger, leaner, and my back pain is gone."</p>
-                        <p class="font-semibold text-primary-light">- John D., 65, Serengeti Estate</p>
-                    </div>
-                </div>
-                <!-- Placeholder for Authority Quote/Statistic -->
-                <div class="mt-12 bg-section-dark p-8 rounded-lg shadow-md border border-gray-dark">
-                    <p class="text-2xl font-bold text-amber-accent mb-4">"People are much more motivated to move away from pain than they are to move towards pleasure."</p>
-                    <p class="text-lg text-tertiary-light">- Industry Authority Quote (e.g., Sabri Suby)</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Step 9: Make Your Godfather Offer & Step 10: Add Bonuses & Step 11: Stack the Value & Step 12: Reveal Your Price & Step 13: Inject Scarcity & Step 14: Give a Powerful Guarantee -->
-        <section id="consultation-section" class="bg-section-dark section-padding text-center px-4">
-            <div class="container-tight mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    YOUR IRRESISTIBLE OFFER: THE TRANSFORMATION BLUEPRINT SESSION.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-12">
-                    This isn't a sales pitch. This is a **no-brainer opportunity** to get a clear, actionable roadmap for your body's transformation. A compelling offer is infinitely more powerful than a convincing argument.
-                </p>
-
-                <div class="bg-section-darker p-8 rounded-2xl shadow-xl border border-gray-dark mb-12">
-                    <!-- Rationale for the Godfather Offer - Enhanced -->
-                    <p class="text-xl font-semibold text-primary-light mb-6">
-                        WHY ARE WE MAKING THIS OFFER?
-                    </p>
-                    <p class="text-lg text-secondary-light font-normal mb-8">
-                        Because we are so confident in our unique method and the results it delivers, we're willing to take **all the risk.** Experience shows that once prospects see the clarity and power of our plan, they often choose to become clients. This session is pure value, designed to **prove we can help you by actually helping you.**
-                    </p>
-
-                    <h3 class="text-2xl font-bold mb-5 text-primary-light">
-                        YOUR FREE TRANSFORMATION BLUEPRINT SESSION INCLUDES:
-                    </h3>
-                    <ul class="text-secondary-light text-lg font-normal space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-md">
-                        <li><strong>CLEAR GOALS:</strong> We pinpoint exactly what you want to achieve. (VALUE: R500)</li>
-                        <li><strong>YOUR PERSONALIZED FITNESS MAP:</strong> We assess your current state and outline the precise steps forward. (VALUE: R750)</li>
-                        <li><strong>TASTE OF OUR UNIQUE METHOD:</strong> Get a sneak peek at how our simple, powerful, and scalable training will work for *you*. (VALUE: R250)</li>
-                        <li><strong>EXPERT QUESTIONS ANSWERED:</strong> Get direct, honest answers from a certified professional, cutting through all the online noise. (VALUE: R500)</li>
-                        <li>**BONUS: "21-DAY HABIT TRACKER" PDF:** A proven tool to kickstart your consistency and eliminate common bad habits (Sugar, Fast Food, Alcohol). (VALUE: R197)</li>
-                    </ul>
-                    <p class="text-xl font-semibold text-primary-light mb-6">
-                        TOTAL VALUE: <span class="line-through">R2197</span>
-                    </p>
-                    <p class="text-4xl font-bold text-amber-accent mb-8 leading-snug">
-                        TODAY'S PRICE: FREE
-                    </p>
-
-                    <!-- Inject Scarcity -->
-                    <p class="text-xl font-semibold text-red-500 mb-6 uppercase">
-                        ACT FAST: ONLY 7 SPOTS LEFT THIS MONTH!
-                    </p>
-                    <p class="text-lg text-tertiary-light mb-8">
-                        We limit these free sessions to ensure personalized attention. Once these spots are gone, they're gone for the month. If there is no motivation for them to take action now, when do you think they will take action? The answer is never.
-                    </p>
-
-                    <!-- Powerful Guarantee -->
-                    <p class="text-xl font-semibold text-primary-light mb-6">
-                        AND BECAUSE WE BURDEN ALL THE RISK:
-                    </p>
-                    <p class="text-3xl font-bold text-amber-accent mb-8 leading-snug">
-                        OUR CONFIDENCE PLEDGE:<br>
-                        IF YOU DON'T WALK AWAY WITH A CLEAR, ACTIONABLE PLAN FOR YOUR FITNESS GOALS AFTER OUR CHAT, YOU OWE US NOTHING.
-                    </p>
-                    <p class="text-lg text-tertiary-light">
-                        This offer should keep *me* up at night, not you. This removes any resistance to make the sale.
-                    </p>
-                </div>
-
-                <!-- Step 15: The Call to Action -->
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-5 mb-8">
-                    <a href="https://wa.me/27833810184" target="_blank" class="inline-block px-10 py-5 bg-green-500 text-white text-xl font-semibold rounded-full hero-button tracking-wide flex items-center justify-center uppercase">
-                        <span class="mr-3 text-2xl">&#x1F4AC;</span> CHAT ON WHATSAPP NOW
-                    </a>
-                    <a href="tel:+27833810184" class="inline-block px-10 py-5 bg-gray-700 text-white text-xl font-semibold rounded-full hero-button tracking-wide flex items-center justify-center uppercase">
-                        <span class="mr-3 text-2xl">&#x260E;</span> GIVE US A CALL: 083 381 0184
-                    </a>
-                </div>
-                <p class="text-base text-secondary-light mt-6 uppercase">
-                    PREFER TO BOOK DIRECTLY? <a href="#" class="text-amber-accent hover:underline font-semibold">SCHEDULE YOUR COMPLIMENTARY SESSION</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- Step 16: The Warning -->
-        <section class="bg-section-darker py-12 text-center px-4">
-            <div class="container-tight mx-auto">
-                <h2 class="text-2xl font-bold mb-5 text-primary-light uppercase">
-                    WARNING: THE COST OF INACTION IS HIGH.
-                </h2>
-                <p class="text-lg text-secondary-light font-normal">
-                    PUT THIS OFF? Nothing changes. You stay stuck. Tired. Wishing. The discomfort you feel now will only grow. These spots are limited, and once they're gone, they're gone. Act now. Don't let comfort stop your change. Your future self will thank you.
-                </p>
-            </div>
-        </section>
-
-        <!-- Footer & Step 17: Close with a Reminder (P.S. Copy) -->
+        <!-- Footer & P.S. Copy -->
         <footer class="bg-footer-dark py-10 px-4 text-center text-secondary-light text-sm font-normal">
             <div class="max-w-7xl mx-auto">
                 <p class="text-base font-semibold text-primary-light mb-3 uppercase">
-                    P.S. THIS ISN'T JUST WORKOUTS. IT'S ABOUT A BODY WITH MORE ENERGY, EASY STRENGTH, AND REAL FREEDOM. CLAIM YOUR FREE SESSION. FIND YOUR SIMPLE PATH TO A STRONGER LIFE. THIS IS YOUR CHANCE TO PLAY THE LONG GAME WITH YOUR HEALTH.
+                    P.S. THIS ISN'T JUST WORKOUTS. IT'S ABOUT A BODY WITH MORE ENERGY, EASY STRENGTH, AND REAL FREEDOM. CHOOSE YOUR PROGRAM AND START YOUR 30-DAY MONEY-BACK GUARANTEE TODAY.
                 </p>
-                <p>&copy; 2024 PRECISION FITNESS COACHING. ALL RIGHTS RESERVED.</p>
+                <!-- UPDATED: Footer copyright text -->
+                <p>&copy; 2024 INVINCIBLE TRAINING. ALL RIGHTS RESERVED.</p>
                 <div class="mt-3 space-x-3">
                     <a href="#" class="hover:text-primary-light font-normal">PRIVACY POLICY</a>
                     <span class="text-tertiary-light">|</span>
                     <a href="#" class="hover:text-primary-light font-normal">TERMS & CONDITIONS</a>
                 </div>
+                <!-- NO SOCIAL LINKS - Do NOT send prospects back up the funnel. -->
             </div>
         </footer>
     </div>
 
+    <!-- Sticky Footer CTA Bar - CRITICAL FOR MOBILE CONVERSION -->
+    <!-- Note: This CTA is generic and still uses the golden hue defined in hero-button styling. -->
+    <div class="fixed bottom-0 left-0 right-0 bg-darkest py-3 z-50 shadow-2xl border-t-2 border-amber-accent sm:hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <a href="#pricing-section" class="w-full block py-3 hero-button text-black text-lg font-bold rounded-lg text-center uppercase">
+                ENQUIRE NOW & GET GUARANTEE &rarr;
+            </a>
+        </div>
+    </div>
 </body>
 </html>
+
+
