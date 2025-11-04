@@ -4,21 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title is a clear promise - UPDATED BRAND NAME -->
-    <title>Shed Fat. Build Muscle. Get Lasting Vitality. - Invincible Training</title> 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-     
-    <!-- Google Tag Manager (using placeholders) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DSR9B2ELR"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title is a clear promise - UPDATED BRAND NAME -->
     <title>Shed Fat. Build Muscle. Get Lasting Vitality. - Invincible Training</title> 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,11 +130,25 @@
         
         /* Video Container */
         .video-container {
-            position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;
-            border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); max-width: 48rem; margin-left: auto; margin-right: auto;
+            position: relative; 
+            width: 100%; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+            border-radius: 1rem; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
+            max-width: 48rem; 
+            margin-left: auto; 
+            margin-right: auto;
         }
         .video-container iframe {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: 0;
+            object-fit: cover; 
         }
 
         /* Custom WhatsApp Button Styling (Undecided Section) */
@@ -245,7 +244,7 @@
             // Using a descriptive name including price for better tracking
             const fullProgramName = `${programName} (R${price}${billingTerm.trim()})`;
             
-            // Message format: "Hello, I want to enroll in the [Full Program Name]. Please send me the next steps."
+            // Message format: "Hello, I saw the Invincible Training programs and I would like to enroll in the [Full Program Name]. Please send me the next steps."
             const message = `Hello, I saw the Invincible Training programs and I would like to enroll in the *${fullProgramName}* program. Please send me the next steps for sign-up.`;
             return WA_BASE_URL + encodeURIComponent(message);
         }
@@ -320,7 +319,7 @@
         };
     </script>
 </head>
-<body>
+<body class="bg-black">
 
     <div class="relative overflow-hidden">
         <!-- Minimalist Header (Top Bar) -->
@@ -354,11 +353,10 @@
                 <!-- VSL Video Embed (1-3 minutes, non-scripted, just honesty) -->
                 <div class="video-container">
                     <iframe
-                        src="https://www.youtube.com/embed/YG0roUARdcs?controls=0&modestbranding=1&rel=0"
+                        src="https://www.youtube.com/embed/c9SUbFEhOhg"
                         title="Program Blueprint Video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -474,514 +472,6 @@
                     </div>
                 </div>
                 
-                <!-- The Money-Back Guarantee (takes on the risk) -->
-                <div class="mt-10 bg-section-darker p-6 rounded-xl border border-gray-dark">
-                    <p class="text-3xl font-bold text-amber-accent mb-3 leading-snug">
-                        OUR CONFIDENCE PLEDGE: 14-DAY MONEY-BACK GUARANTEE.
-                    </p>
-                    <p class="text-lg text-secondary-light">
-                        You've likely experienced the disappointment of ineffective programs. We believe in providing value, which is why your investment is protected by a 14-day money-back guarantee starting from the date of purchase. To guarantee a fast, same-day refund if you find this coaching isn't the perfect solution, all enrollment must be completed directly on this website.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- WhatsApp Call to Action (Undecided) -->
-        <section class="bg-section-dark pt-12 pb-16 text-center px-4">
-            <div class="container-tight mx-auto">
-                <!-- Applied custom sizing for 3x bigger heading -->
-                <h2 class="undecided-heading font-bold mb-4 text-primary-light uppercase">
-                    STILL UNDECIDED?
-                </h2>
-                <p class="text-lg text-secondary-light font-normal mb-8">
-                    Making a commitment to your health is a significant decision. We are here to help you choose the best option for your unique needs. If you are looking for in-person coaching, please enquire today!
-                </p>
-                <a href="https://wa.me/27833810184" target="_blank" class="inline-flex items-center justify-center px-10 py-4 font-bold rounded-full whatsapp-button-color text-white text-lg tracking-wide hover:shadow-lg transition-all">
-                    <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12.04 2.86C6.88 2.86 2.7 7.04 2.7 12.2c0 1.7 0.48 3.32 1.34 4.75L2.83 21.03l4.24-1.22c1.39 0.76 2.97 1.15 4.8 1.15h.01c5.17 0 9.35-4.19 9.35-9.35 0-5.17-4.18-9.35-9.35-9.35zm0 16.92c-1.63 0-3.15-.43-4.49-1.18l-3.26.94.94-3.17c-0.81-1.42-1.24-3.05-1.24-4.71 0-4.3 3.48-7.79 7.78-7.79 4.3 0 7.78 3.49 7.78 7.79 0 4.31-3.48 7.79-7.78 7.79zm3.84-5.08c-0.21-0.1-0.49-0.24-0.78-0.38-0.28-0.14-0.49-0.21-0.67-0.21s-0.34-0.07-0.62 0.28c-0.28 0.35-1.07 1.29-1.3 1.55-0.23 0.26-0.46 0.29-0.85 0.11s-1.63-0.59-3.08-1.92c-1.14-1.05-1.91-2.34-2.14-2.73s-0.02-0.57 0.17-0.71c0.16-0.14 0.35-0.28 0.52-0.45 0.17-0.17 0.23-0.28 0.35-0.46 0.12-0.18 0.06-0.34-0.03-0.54s-0.67-1.72-0.91-2.35c-0.23-0.63-0.18-0.54-0.4-0.91-0.18-0.31-0.38-0.26-0.59-0.26s-0.42-0.05-0.66-0.05c-0.23 0-0.62 0.05-0.93 0.42-0.31 0.37-1.18 1.14-1.18 2.78s1.22 3.23 1.39 3.46c0.17 0.23 2.29 3.49 5.56 4.88 0.77 0.33 1.38 0.53 1.86 0.68 0.77 0.25 1.48 0.22 2.04 0.14 0.61-0.09 1.84-0.75 2.1-1.49s0.27-1.32 0.19-1.49c-0.08-0.17-0.29-0.27-0.6-0.43z"/>
-                    </svg>
-                    <span>TALK TO US ON WHATSAPP</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer & P.S. Copy -->
-        <footer class="bg-footer-dark py-10 px-4 text-center text-secondary-light text-sm font-normal">
-            <div class="max-w-7xl mx-auto">
-                <p class="text-base font-semibold text-primary-light mb-3 uppercase">
-                    P.S. THIS ISN'T JUST WORKOUTS. IT'S ABOUT A BODY WITH MORE ENERGY, EASY STRENGTH, AND REAL FREEDOM. CHOOSE YOUR PROGRAM AND START YOUR 30-DAY MONEY-BACK GUARANTEE TODAY.
-                </p>
-                <!-- UPDATED: Footer copyright text -->
-                <p>&copy; 2024 INVINCIBLE TRAINING. ALL RIGHTS RESERVED.</p>
-                <div class="mt-3 space-x-3">
-                    <a href="#" class="hover:text-primary-light font-normal">PRIVACY POLICY</a>
-                    <span class="text-tertiary-light">|</span>
-                    <a href="#" class="hover:text-primary-light font-normal">TERMS & CONDITIONS</a>
-                </div>
-                <!-- NO SOCIAL LINKS - Do NOT send prospects back up the funnel. -->
-            </div>
-        </footer>
-    </div>
-
-    <!-- REMOVED: Sticky Footer CTA Bar (The fixed mobile CTA) -->
-    <!--
-    <div class="fixed bottom-0 left-0 right-0 bg-darkest py-3 z-50 shadow-2xl border-t-2 border-amber-accent sm:hidden">
-        <div class="max-w-7xl mx-auto px-4">
-            <a href="#pricing-section" class="w-full block py-3 hero-button text-black text-lg font-bold rounded-lg text-center uppercase">
-                ENQUIRE NOW & GET GUARANTEE &rarr;
-            </a>
-        </div>
-    </div>
-    -->
-</body>
-</html>
-
-
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9DSR9B2ELR');
-        gtag('config', 'GT-WVR58HJT');
-    </script>
-
-    <!-- Redesigned CSS with new variables for better management and color consistency -->
-    <style>
-        /* BASE STYLES */
-        :root {
-            --color-black: #000000;
-            --color-darkest: #050505; /* Near Black */
-            --color-dark: #0A0A0A; /* Section Darker */
-            --color-mid: #1A1A1A; /* Section Dark */
-            --color-accent: #FFB800; /* Vibrant Gold/Amber */
-            --color-text-primary: #FFFFFF;
-            --color-text-secondary: #E0E0E0;
-            --color-text-tertiary: #B0B0B0;
-            --color-border: #333333;
-            --color-whatsapp: #25D366; /* WhatsApp Green */
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--color-black);
-            color: var(--color-text-primary);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-        /* Adjusted section padding for a tighter feel */
-        .section-padding { padding-top: 6rem; padding-bottom: 6rem; }
-        @media (min-width: 768px) {
-            .section-padding { padding-top: 8rem; padding-bottom: 8rem; }
-        }
-        .container-tight { max-width: 48rem; }
-        .container-medium { max-width: 64rem; }
-
-        /* ACCENT & DARK MODE STYLES */
-        .gradient-text {
-            background: linear-gradient(to right, #FF8C00, var(--color-accent)); 
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        /* All sections now use the same black background */
-        .bg-section-dark { background-color: var(--color-black); }
-        .bg-section-darker { background-color: var(--color-black); }
-        .text-primary-light { color: var(--color-text-primary); }
-        .text-secondary-light { color: var(--color-text-secondary); }
-        .text-tertiary-light { color: var(--color-text-tertiary); }
-        .text-amber-accent { color: var(--color-accent); }
-        .border-gray-dark { border-color: var(--color-border); }
-        .bg-footer-dark { background-color: var(--color-black); }
-        .list-disc li::marker { color: var(--color-accent); }
-         
-        /* === Custom class for the glowing border effect on the popular card === */
-         
-        /* Keyframes for the constant, pulsating glow */
-        @keyframes pulse-glow {
-            0% {
-                box-shadow: 
-                    0 0 20px rgba(255, 184, 0, 0.7), /* Outer subtle glow */
-                    0 0 70px rgba(255, 184, 0, 0.4) inset; /* Inner soft hue */
-            }
-            50% {
-                box-shadow: 
-                    0 0 35px rgba(255, 184, 0, 1), /* Brighter at 50% */
-                    0 0 100px rgba(255, 184, 0, 0.6) inset; /* Stronger inner hue */
-            }
-            100% {
-                box-shadow: 
-                    0 0 20px rgba(255, 184, 0, 0.7), 
-                    0 0 70px rgba(255, 184, 0, 0.4) inset;
-            }
-        }
-
-        .golden-glow-border {
-            /* Increased border thickness for impact */
-            border-width: 5px; 
-            border-style: solid;
-            border-color: var(--color-accent); /* Ensure border color is solid gold */
-
-            /* Apply the animation for a constant, eye-catching pulse */
-            animation: pulse-glow 2s infinite alternate ease-in-out; 
-             
-            z-index: 10;
-        }
-         
-        /* ========================================================================= */
-
-        /* CTA Button Styling for WhatsApp Checkout (Green for ALL Programs) */
-        .whatsapp-cta-button { 
-            background: linear-gradient(to right, #00A859, #25D366); /* Darker Green to WhatsApp Green */
-            color: white; 
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.2); 
-        }
-        .whatsapp-cta-button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
-        }
-         
-        /* Hero Button (Used for the sticky mobile CTA) - Style it like a golden CTA */
-        .hero-button {
-            background: linear-gradient(to right, #FF8C00, var(--color-accent)); /* Gold/Amber Gradient */
-            color: var(--color-darkest); /* Dark text for contrast */
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 30px rgba(255, 184, 0, 0.4); 
-        }
-        .hero-button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(255, 184, 0, 0.6);
-        }
-         
-        /* Video Container */
-        .video-container {
-            position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;
-            border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); max-width: 48rem; margin-left: auto; margin-right: auto;
-        }
-        .video-container iframe {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
-        }
-
-        /* Custom WhatsApp Button Styling (Undecided Section) */
-        .whatsapp-button-color { 
-            background: linear-gradient(to right, #34A853, var(--color-whatsapp)); 
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
-            transition: all 0.3s ease;
-        }
-        .whatsapp-button-color:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
-        }
-        .whatsapp-button-color svg {
-            fill: white;
-            transition: transform 0.3s ease;
-        }
-        /* Increased size for Still Undecided Heading */
-        .undecided-heading { font-size: 3rem; } /* Default size for mobile */
-        @media (min-width: 640px) {
-             .undecided-heading { font-size: 4rem; } /* sm:text-5xl */
-        }
-        @media (min-width: 768px) {
-            .undecided-heading { font-size: 5rem; } /* md:text-6xl - Roughly 3x the previous text-4xl */
-        }
-         
-        /* Pricing Tab Styles */
-        .price-selector-group {
-            display: flex;
-            background-color: var(--color-mid);
-            border-radius: 0.75rem; /* rounded-xl */
-            padding: 4px; /* p-1 */
-            margin-bottom: 2rem;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-        }
-         
-        /* MODIFIED PRICE BUTTON STYLES FOR PROPORTIONALITY */
-        .price-selector-button {
-            padding: 0.5rem 0.75rem; /* Tighter horizontal padding */
-            font-weight: 600; /* font-semibold */
-            color: var(--color-text-tertiary); /* text-gray-400 */
-            border-radius: 0.5rem; /* rounded-lg */
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: center;
-            min-width: 5rem; /* Slightly reduced min width */
-            line-height: 1.2; /* Tighter line height to accommodate two lines better */
-        }
-        /* ======================================================= */
-
-        .price-selector-button.active {
-            background-color: var(--color-accent); /* bg-amber-500 */
-            color: var(--color-darkest); /* text-black */
-            box-shadow: 0 4px 10px rgba(255, 184, 0, 0.4);
-        }
-
-    </style>
-    <script>
-        // WhatsApp link base URL with placeholder phone number (replace with your actual number)
-        const WHATSAPP_NUMBER = "27833810184"; 
-        const WA_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
-
-        // === PROGRAM & PRICING DATA ===
-        // NOTE: The description of the Block option has been simplified to remove the savings detail.
-        const pricingData = {
-            // THE 'PROGRAMMING ONLY' PROGRAM
-            'program1': [
-                { term: 'Monthly', price: '550', billing: '/month', default: true },
-                { term: 'Yearly', price: '5500', billing: '/year' }
-            ],
-            // THE 'GUIDED PROGRESS' PROGRAM (Most Popular)
-            'program2': [
-                { term: 'Weekly', price: '215', billing: '/week', default: true },
-                { term: 'Monthly', price: '850', billing: '/month' },
-                // Simplified Block Option
-                { term: 'Block', price: '3000', billing: ' (4 months)' }
-            ],
-            // THE 'COMPLETE' TRANSFORMATION
-            'program3': [
-                { term: 'Weekly', price: '500', billing: '/week', default: true }
-            ]
-        };
-         
-        /**
-         * Generates the full WhatsApp link with a custom message.
-         * @param {string} programName The descriptive name of the program.
-         * @param {string} price The price value.
-         * @param {string} billingTerm The billing frequency (e.g., /month, /year).
-         * @returns {string} The encoded WhatsApp deep link.
-         */
-        function generateWhatsappLink(programName, price, billingTerm) {
-            // Using a descriptive name including price for better tracking
-            const fullProgramName = `${programName} (R${price}${billingTerm.trim()})`;
-             
-            // Message format: "Hello, I want to enroll in the [Full Program Name]. Please send me the next steps."
-            const message = `Hello, I saw the Invincible Training programs and I would like to enroll in the *${fullProgramName}* program. Please send me the next steps for sign-up.`;
-            return WA_BASE_URL + encodeURIComponent(message);
-        }
-
-        /**
-         * Updates the price display and CTA link for a program card.
-         * @param {string} programId 'program1', 'program2', or 'program3'.
-         * @param {string} term The billing term selected ('Monthly', 'Yearly', 'Weekly', 'Block').
-         */
-        function updatePriceDisplay(programId, term) {
-            const programOptions = pricingData[programId];
-            const selectedOption = programOptions.find(opt => opt.term === term);
-
-            if (!selectedOption) return; // Guard clause
-
-            const priceElement = document.getElementById(`${programId}-price`);
-            const billingElement = document.getElementById(`${programId}-billing`);
-            const ctaButton = document.getElementById(`cta-${programId}`);
-            const programTitle = document.getElementById(`${programId}-title`).innerText;
-             
-            // 1. Update Price and Billing Text
-            if (priceElement) {
-                priceElement.innerText = selectedOption.price;
-            }
-            if (billingElement) {
-                billingElement.innerText = selectedOption.billing;
-            }
-
-            // 2. Update CTA Link
-            if (ctaButton) {
-                ctaButton.href = generateWhatsappLink(programTitle, selectedOption.price, selectedOption.billing);
-            }
-
-            // 3. Update Active Button State (if selectors exist)
-            const selectorGroup = document.getElementById(`${programId}-selectors`);
-            if (selectorGroup) {
-                selectorGroup.querySelectorAll('.price-selector-button').forEach(btn => {
-                    if (btn.getAttribute('data-term') === term) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            }
-        }
-         
-        /**
-         * Initializes the pricing cards with default values and attaches listeners.
-         */
-        window.onload = function() {
-            // Initialize each program card
-            Object.keys(pricingData).forEach(programId => {
-                const programOptions = pricingData[programId];
-                const defaultOption = programOptions.find(opt => opt.default);
-                 
-                // Set the default price and CTA
-                if (defaultOption) {
-                    updatePriceDisplay(programId, defaultOption.term);
-                }
-
-                // Attach listeners to selector buttons
-                const selectorGroup = document.getElementById(`${programId}-selectors`);
-                if (selectorGroup) {
-                    selectorGroup.querySelectorAll('.price-selector-button').forEach(button => {
-                        button.addEventListener('click', () => {
-                            const term = button.getAttribute('data-term');
-                            updatePriceDisplay(programId, term);
-                        });
-                    });
-                }
-            });
-        };
-    </script>
-</head>
-<body class="bg-black">
-
-    <div class="relative overflow-hidden">
-        <!-- Minimalist Header (Top Bar) -->
-        <header class="absolute top-0 left-0 right-0 z-10 px-4 py-4">
-            <!-- UPDATED: Changed justify-between to justify-center to center the branding -->
-            <nav class="max-w-7xl mx-auto flex justify-center items-center">
-                <!-- UPDATED: Brand name changed to INVINCIBLE TRAINING and centered -->
-                <div class="logo-placeholder text-xl font-bold text-amber-accent">INVINCIBLE TRAINING</div>
-            </nav>
-        </header>
-
-        <!-- Hero Section (Headline, Subheading, VSL) - First touchpoint is impactful -->
-        <section class="relative bg-section-darker text-center pt-32 pb-12 sm:pb-16 px-4">
-            <div class="relative z-10 max-w-5xl mx-auto">
-                 
-                <!-- New Wording -->
-                <p class="text-lg font-bold uppercase mb-4 text-white">
-                    ATTENTION: THE TRUTH ABOUT WHY YOUR FITNESS EFFORTS HAVE FAILED (AND HOW TO FINALLY WIN).
-                </p>
-
-                <!-- Heading: Clear, Compelling Promise, specific and avoids cheesy phrases -->
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-amber-accent">
-                    SICK OF FAD DIETS & EMPTY PROMISES? FINALLY SHED FAT. BUILD REAL MUSCLE. GET LASTING RESULTS.
-                </h1>
-                 
-                <!-- Subheading: Add Context to the promise -->
-                <p class="text-lg sm:text-xl font-bold mb-12 max-w-3xl mx-auto text-white">
-                    YOU'VE TRIED IT ALL, YET STILL FRUSTRATED. DISCOVER OUR UNIQUE METHOD THAT WORKS WHERE OTHERS HAVE FAILED, DELIVERING THE LEAN, STRONG BODY YOU DESERVE.
-                </p>
-
-                <!-- VSL Video Embed (1-3 minutes, non-scripted, just honesty) -->
-                <div class="video-container">
-                    <iframe
-                        src="https://www.youtube.com/embed/c9SUbFEhOhg?controls=0&modestbranding=1&rel=0"
-                        title="Program Blueprint Video"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <p class="text-sm text-tertiary-light mt-4 mb-8">WATCH THIS SHORT VIDEO TO SEE THE EXACT BLUEPRINT WE USE</p>
-            </div>
-        </section>
-
-        <!-- Step 9-16: Pricing & Offer Section (Frictionless, Direct Purchase) -->
-        <section id="pricing-section" class="bg-section-dark pt-12 pb-16 sm:pt-16 sm:pb-24 text-center px-4">
-            <div class="container-medium mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8 gradient-text uppercase">
-                    CHOOSE YOUR TRANSFORMATION PATH: FULL TRANSPARENCY.
-                </h2>
-                 
-                <p class="text-xl text-secondary-light font-normal mb-10 max-w-3xl mx-auto">
-                    No calls, no sales pitches—just a clear path to lasting results. Select the program and term that fits your goals and begin today with our Money-Back Confidence Pledge.
-                </p>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                     
-                    <!-- Pricing Option 1: The 'Programming Only' Program (Monthly/Yearly Toggle) -->
-                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-gray-dark hover:border-amber-accent transition duration-300 flex flex-col">
-                        <h3 id="program1-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'PROGRAMMING ONLY' PROGRAM</h3>
-                        <p class="text-base text-tertiary-light mb-6">For the motivated self-starter.</p>
-                         
-                        <!-- Price Selector Toggles -->
-                        <div id="program1-selectors" class="price-selector-group">
-                            <button data-term="Monthly" class="price-selector-button">Monthly</button>
-                            <button data-term="Yearly" class="price-selector-button">Yearly</button>
-                        </div>
-
-                        <!-- Dynamic Price Display -->
-                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
-                            R<span id="program1-price">550</span>
-                            <span class="text-xl text-tertiary-light" id="program1-billing">/month</span>
-                        </p>
-
-                        <!-- Features listed -->
-                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
-                            <li>Customised Training Program</li>
-                            <li>Access to our Program Library</li>
-                            <li>Video Demonstrations for every exercise</li>
-                        </ul>
-                         
-                        <!-- WhatsApp CTA (Green) -->
-                        <a id="cta-program-1" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
-                            ENQUIRE NOW &rarr;
-                        </a>
-                    </div>
-
-                    <!-- Pricing Option 2: The 'Guided Progress' Program (Most Popular) (Weekly/Monthly/Block Toggle) -->
-                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-amber-accent golden-glow-border transition duration-300 relative flex flex-col">
-                        <div class="absolute top-0 right-0 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>
-                        <h3 id="program2-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'GUIDED PROGRESS' PROGRAM</h3>
-                        <p class="text-base text-tertiary-light mb-6">For the serious but busy professional.</p>
-
-                        <!-- Price Selector Toggles (Now proportional) -->
-                        <div id="program2-selectors" class="price-selector-group">
-                            <button data-term="Weekly" class="price-selector-button">Weekly</button>
-                            <button data-term="Monthly" class="price-selector-button">Monthly</button>
-                            <!-- Savings text removed from the button -->
-                            <button data-term="Block" class="price-selector-button">4-Month Block</button>
-                        </div>
-                         
-                        <!-- Dynamic Price Display -->
-                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
-                            R<span id="program2-price">215</span>
-                            <span class="text-xl text-tertiary-light" id="program2-billing">/week</span>
-                        </p>
-                         
-                        <!-- Features listed -->
-                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
-                            <li>EVERYTHING IN THE 'PROGRAMMING ONLY' PROGRAM, PLUS:</li>
-                            <li>Weekly Check-ins & Progress Tracking</li>
-                            <li>Basic Nutrition Guidelines</li>
-                            <li>Ongoing Accountability & Motivation</li>
-                        </ul>
-                         
-                        <!-- WhatsApp CTA (GREEN) -->
-                        <a id="cta-program-2" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
-                            ENQUIRE NOW &rarr;
-                        </a>
-                    </div>
-
-                    <!-- Pricing Option 3: The 'Complete' Transformation (Weekly Price - Fixed) -->
-                    <div class="bg-section-darker p-8 rounded-2xl shadow-xl border-4 border-gray-dark hover:border-amber-accent transition duration-300 flex flex-col">
-                        <h3 id="program3-title" class="text-2xl font-bold mb-2 text-primary-light uppercase">THE 'COMPLETE' TRANSFORMATION</h3>
-                        <p class="text-base text-tertiary-light mb-6">For those who want comprehensive support.</p>
-                         
-                        <!-- Price Selector Placeholder (No Toggle needed as only one option provided) -->
-                        <div id="program3-selectors" class="mb-8"><!-- Placeholder for consistent spacing --></div>
-
-                        <!-- Dynamic Price Display (Fixed) -->
-                        <p class="text-5xl font-extrabold text-amber-accent mb-4">
-                            R<span id="program3-price">500</span>
-                            <span class="text-xl text-tertiary-light" id="program3-billing">/week</span>
-                        </p>
-
-                        <!-- Features listed -->
-                        <ul class="text-secondary-light text-base space-y-3 mb-8 list-disc list-inside text-left mx-auto max-w-xs">
-                            <li>EVERYTHING IN THE 'GUIDED PROGRESS' PROGRAM, PLUS:</li>
-                            <li>Bespoke Nutrition Coaching & Meal Plans</li>
-                            <li>24/7 Direct Coach Access for all queries</li>
-                            <li>Gym Program Adjustments & Injury Workarounds</li>
-                            <li>Mindset Coaching & Education</li>
-                            <li>Comprehensive Monthly Review Calls</li>
-                        </ul>
-                         
-                        <!-- WhatsApp CTA (Green) -->
-                        <a id="cta-program-3" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-10 py-4 whatsapp-cta-button text-xl font-bold rounded-full tracking-wide uppercase mt-auto">
-                            ENQUIRE NOW &rarr;
-                        </a>
-                    </div>
-                </div>
-                 
                 <!-- The Money-Back Guarantee (takes on the risk) -->
                 <div class="mt-10 bg-section-darker p-6 rounded-xl border border-gray-dark">
                     <p class="text-3xl font-bold text-amber-accent mb-3 leading-snug">
